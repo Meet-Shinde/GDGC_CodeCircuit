@@ -29,3 +29,10 @@ npm-debug.log*
 # Logs / local artifacts
 *.log
 *.local
+
+cd ..
+notepad .gitignore
+
+env.backend
+env.frontend
+*.mine
