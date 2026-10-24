@@ -1,6 +1,8 @@
 QA_checklist
 deployment.md
 
+probe.py
+
 # Secrets
 .env
 .env.*
