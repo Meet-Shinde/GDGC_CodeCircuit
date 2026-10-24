@@ -1,0 +1,3 @@
+import type { Obligation } from '../types/analysis';
+import { EvidenceQuote } from './ResultShared';
+export default function ObligationCard({ obligation: o, index: i }: { obligation: Obligation; index: number }) { return (<article className="paper obligation-card"><div className="obligation-title"><span className="party-label">{o.party || 'Party not specified'}</span><span className="card-index">{String(i + 1).padStart(2, '0')}</span></div><h3>{o.action || 'Action not specified'}</h3><dl className="obligation-details"><div><dt>◷ Timing / trigger</dt><dd>{o.timing || 'Not specified in this excerpt'}</dd></div><div><dt>↳ Financial effect</dt><dd>{o.financial_effect ?? 'Not specified in this excerpt'}</dd></div></dl><EvidenceQuote {...o}/></article>); }
